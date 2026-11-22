@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4955294506625699657}
   - component: {fileID: 3239136410156677743}
   - component: {fileID: -4691586095343767370}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Leaf_Green
   m_TagString: Leaf
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ba6af58b96af6cb4bb36530de3a07034, type: 3}
       propertyPath: m_Layer
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
