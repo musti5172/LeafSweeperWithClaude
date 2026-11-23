@@ -168,7 +168,7 @@ Material:
     - _DstBlend: 0
     - _EdgeHighlights: 0.45
     - _EmissionIntensity: 8
-    - _EmissionIntensity1: 1.5
+    - _EmissionIntensity1: 2
     - _EnableColorTint: 0
     - _EnableEmission: 1
     - _EnableRimLighting: 0
@@ -264,7 +264,7 @@ Material:
     - _BaseTint: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 2.045441, g: 0, b: 2.0091288, a: 1}
+    - _EmissionColor: {r: 0, g: 2.4010646, b: 0.008076815, a: 1}
     - _HighlightsColor: {r: 1, g: 0.035483092, b: 0, a: 1}
     - _InnerColor: {r: 0, g: 0.5678591, b: 1, a: 0}
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}

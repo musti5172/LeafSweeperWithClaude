@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private TextMeshProUGUI leafCountText;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI upgradeText;
 
     private void Awake()
     {
@@ -20,6 +21,11 @@ public class UIManager : MonoBehaviour
 
     public void UpdateScoreText(int score)
     {
-        scoreText.text = "Puan: " + score;
+        scoreText.text = "PUAN: " + score;
+    }
+
+    public void SetUpgradeText(string message)
+    {
+        upgradeText.text = message;
     }
 }

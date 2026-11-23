@@ -47,4 +47,9 @@ public class PlayerMovement3D : MonoBehaviour
         Vector3 velocity = move * walkSpeed + Vector3.up * verticalVelocity;
         controller.Move(velocity * Time.deltaTime);
     }
+
+    public void AddSpeed(float amount)
+    {
+        walkSpeed += amount;
+    }
 }

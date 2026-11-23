@@ -24,6 +24,7 @@ public class LeafVacuum : MonoBehaviour
 
     private readonly List<Rigidbody> candidates = new List<Rigidbody>();
     private readonly HashSet<Rigidbody> pulledNow = new HashSet<Rigidbody>();
+
     private void Awake()
     {
         leafLayer = LayerMask.NameToLayer("Leaf");
@@ -142,5 +143,17 @@ public class LeafVacuum : MonoBehaviour
     private void OnDisable()
     {
         Physics.IgnoreLayerCollision(leafLayer, playerLayer, false);
+    }
+
+    public void UpgradePower()
+    {
+        pullSpeed += 1f;
+        maxPulledAtOnce += 2;
+    }
+
+    public void UpgradeRange()
+    {
+        vacuumDistance += 0.5f;
+        coneAngle = Mathf.Min(coneAngle + 3f, 60f);
     }
 }
