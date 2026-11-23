@@ -73,7 +73,8 @@ public class LeafVacuum : MonoBehaviour
             if (Vector3.Distance(leafTf.position, vacuumTip.position) > collectDistance) continue;
             if (bagCapacity.IsFull()) break;
 
-            bagCapacity.AddLeaf();
+            LeafValue value = leafTf.GetComponent<LeafValue>();
+            bagCapacity.AddLeaf(value != null ? value.points : 1);
             pulledNow.Remove(leafRb);
             Destroy(leafTf.gameObject);
         }

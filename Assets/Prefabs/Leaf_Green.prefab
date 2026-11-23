@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4955294506625699657}
   - component: {fileID: 3239136410156677743}
+  - component: {fileID: 8904449241238211833}
   - component: {fileID: -4691586095343767370}
   m_Layer: 3
   m_Name: Leaf_Green
@@ -55,6 +56,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.2, y: 0.035803422, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8904449241238211833
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2863841817702068081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a1cd745800ff2b4e99ff03f3596420a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LeafValue
+  points: 1
 --- !u!54 &-4691586095343767370
 Rigidbody:
   m_ObjectHideFlags: 0

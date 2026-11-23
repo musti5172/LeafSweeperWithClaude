@@ -4,6 +4,8 @@ public class BagCapacity : MonoBehaviour
 {
     [SerializeField] private int maxCapacity = 20;
     private int currentCapacity;
+    private int bagPoints;
+    private int totalScore;
 
     public int MaxCapacity => maxCapacity;
     public int RemainingSpace => maxCapacity - currentCapacity;
@@ -11,6 +13,7 @@ public class BagCapacity : MonoBehaviour
     private void Start()
     {
         UIManager.Instance.UpdateLeafCountText(currentCapacity, maxCapacity);
+        UIManager.Instance.UpdateScoreText(totalScore);
     }
 
     public bool IsFull()
@@ -18,17 +21,22 @@ public class BagCapacity : MonoBehaviour
         return currentCapacity >= maxCapacity;
     }
 
-    public void AddLeaf()
+    public void AddLeaf(int points)
     {
         if (currentCapacity >= maxCapacity) return;
 
         currentCapacity++;
+        bagPoints += points;
         UIManager.Instance.UpdateLeafCountText(currentCapacity, maxCapacity);
     }
 
     public void EmptyBag()
     {
+        totalScore += bagPoints;
+        bagPoints = 0;
         currentCapacity = 0;
+
         UIManager.Instance.UpdateLeafCountText(currentCapacity, maxCapacity);
+        UIManager.Instance.UpdateScoreText(totalScore);
     }
 }
