@@ -168,7 +168,7 @@ Material:
     - _DstBlend: 0
     - _EdgeHighlights: 0.45
     - _EmissionIntensity: 8
-    - _EmissionIntensity1: 3
+    - _EmissionIntensity1: 1.5
     - _EnableColorTint: 0
     - _EnableEmission: 1
     - _EnableRimLighting: 0
@@ -233,7 +233,7 @@ Material:
     - _SpecularHighlights: 0
     - _SpecularInfluence: 0.5
     - _SpecularIntensity: 0.5
-    - _SpecularIntensity1: 0.25
+    - _SpecularIntensity1: 0.15
     - _SpecularOcclusion: 1
     - _SpecularSize: 0.1
     - _SpecularSmoothness: 0.5
@@ -264,7 +264,7 @@ Material:
     - _BaseTint: {r: 0, g: 0, b: 0, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _Color0: {r: 1, g: 1, b: 1, a: 0}
-    - _EmissionColor: {r: 1.4980392, g: 0, b: 0.99244374, a: 1}
+    - _EmissionColor: {r: 2.045441, g: 0, b: 2.0091288, a: 1}
     - _HighlightsColor: {r: 1, g: 0.035483092, b: 0, a: 1}
     - _InnerColor: {r: 0, g: 0.5678591, b: 1, a: 0}
     - _MainColor: {r: 1, g: 1, b: 1, a: 0}
@@ -273,7 +273,7 @@ Material:
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _SpecularColor: {r: 1, g: 1, b: 1, a: 1}
     - _SpecularTint: {r: 1, g: 1, b: 1, a: 1}
-    - _SubsurfaceTint: {r: 0.40066588, g: 0.5377358, b: 0, a: 1}
+    - _SubsurfaceTint: {r: 1, g: 1, b: 1, a: 1}
     - _TopColor: {r: 1, g: 0, b: 0.24241966, a: 0}
     - _TopHighlightsColor: {r: 0.6792453, g: 0.574707, b: 0.31719473, a: 1}
     - _WindDirection: {r: 0.25, g: 0, b: 0.15, a: 0}
