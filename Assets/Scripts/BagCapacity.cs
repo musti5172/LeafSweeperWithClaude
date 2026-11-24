@@ -7,6 +7,7 @@ public class BagCapacity : MonoBehaviour
     private int bagPoints;
     private int totalScore;
 
+    //araþtýr
     public int TotalScore => totalScore;
 
     public bool TrySpend(int cost)
@@ -24,6 +25,7 @@ public class BagCapacity : MonoBehaviour
         UIManager.Instance.UpdateLeafCountText(currentCapacity, maxCapacity);
     }
 
+    //araþtýr
     public int MaxCapacity => maxCapacity;
     public int RemainingSpace => maxCapacity - currentCapacity;
 
